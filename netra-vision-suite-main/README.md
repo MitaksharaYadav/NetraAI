@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+# Netra-AI: Advanced Diabetic Retinopathy Screening System
 
-## Project info
+**Netra-AI** is a high-accuracy, "Made in India" diagnostic tool designed for automated retinal screening. By utilizing deep learning and explainable AI, it provides expert-level diagnostics to bridge the gap in clinical accessibility and improve early intervention for diabetic patients.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## 🚀 Key Technical Achievements
+* **Performance:** Achieved a **Quadratic Weighted Kappa score of 0.8985** on the APTOS 2019 dataset.
+* **Architecture:** Optimized **EfficientNet-B3** backbone with an **Ordinal Regression** head for multi-stage severity mapping.
+* **Preprocessing:** Implemented **Ben Graham's Gaussian Blur Subtraction** for lighting normalization and lesion enhancement.
+* **Explainability:** Integrated **Grad-CAM** heatmaps to highlight pathological regions like microaneurysms and hemorrhages.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technology Stack
+* **Frontend:** React, Vite, TypeScript, shadcn-ui, Tailwind CSS.
+* **Backend:** FastAPI (Python), PyTorch, Torchvision.
+* **Infrastructure:** ABDM (Ayushman Bharat Digital Mission) simulated integration for electronic health record standards.
 
-**Use your preferred IDE**
+## 💻 Local Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js & npm installed
+- Python 3.10+ installed
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### Setup Commands
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
+cd Netra-AI
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Set up the AI Backend
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 3: Set up the React Frontend (Open new terminal)
+cd frontend
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
